@@ -13,7 +13,7 @@ export class CrawlerService {
         private config: ConfigService
     ) {
         this.jsonFile = this.config.get('jsonFile');
-        // this.scrapping(this.url, 1);
+        this.scrapping(this.url, 1);
     }
 
     async scrapping(url, start) {
